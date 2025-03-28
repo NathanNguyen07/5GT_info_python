@@ -1,0 +1,4 @@
+nombre=input("Bonjour, bienvenue dans ce programme de multiplication. De quel nombre voulez-vous connaître la table de multiplication?")
+nombre=int(nombre)
+for i in range(11):
+  print(i,"x",nombre,"=",i*nombre)
