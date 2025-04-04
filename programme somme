@@ -1,0 +1,29 @@
+import random
+
+nombre1=random.randint(-100,100)
+nombre2=random.randint(-100,100)
+
+somme=nombre1+nombre2
+question="Que vaut la somme de "+str(nombre1)+" et "+str(nombre2)+ " ?"
+reponse=input(question)
+
+valid=0
+
+while valid==0:
+    try:
+        reponse=int(reponse)
+        valid==1
+    except:
+        print("AHAHAH AGAIN")
+        reponse=input("Quelle est votre réponse ?")
+
+
+if reponse==somme:
+    print("Va sur bs et arrete de calculer")
+
+elif reponse!=somme:
+    print("AIE AIE AIE")
+ 
+
+else:
+    print("c'est pas ouf")
