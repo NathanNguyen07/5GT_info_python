@@ -1,0 +1,25 @@
+print("Bienvenue dans notre restaurant !")
+
+
+print("Pour un hamburger tapez 1")
+print("Pour une pizza tapez 2")
+print("Pour une salade tapez 3")
+choix = input("Votre choix : ")
+choix=int(choix)
+
+while choix not in [1,2,3]:
+  print("Veuillez choisir un menu parmi les trois proposés")
+  choix = input("Votre choix : ")
+  choix=int(choix)
+
+
+if choix== 1:
+  print("Je vous ramène l'hamburger de suite !")
+
+elif choix== 2:
+  print("Je vous ramène la pizza de suite !")
+
+elif choix== 3:
+  print("Je vous ramène la salade de suite !")
+
+print("sur place ou à emporter ?")
