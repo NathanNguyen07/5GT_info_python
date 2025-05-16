@@ -1,0 +1,70 @@
+from math import pi
+
+def menu():
+    print("Bonjour dans ce programme de calcul d'aire")
+    print("Pour calculer l'aire d'un triangle tapez (1)")
+    print("Pour calculer l'aire d'un carré tapez (2)")
+    print("Pour calculer l'aire d'un cercle tapez (3)")
+    print("Pour calculer l'aire d'un rectangle tapez (4)")
+    print("Pour quitter tapez (5)")
+    choix = input("Votre choix :")
+    choix = int(choix)
+ 
+   
+    if choix==1 :
+      triangle()
+    elif choix==2 :
+      carré()
+    elif choix==3 :
+      cercle()
+    elif choix==4 :
+      rectangle()
+    elif choix==5 :
+      quit()
+    else:
+      print("Une erreur a été rencontrée... Oups !")
+      print()
+      menu()
+
+def triangle():
+   base=input("Que vaut la base ?")
+   base=float(base)
+   hauteur=input("Que vaut la hauteur ?")
+   hauteur=float(hauteur)
+   aire=base*hauteur/2
+   print("L'aire du triangle vaut : ",round(aire,3))
+   print()
+   menu()
+
+def carré():
+   coté=input("Que vaut le coté ?")
+   coté=float(coté)
+   aire=coté**2
+   print("L'aire du carré vaut : ",round(aire,3))
+   print()
+   menu()
+
+def cercle():
+   rayon=input("Que vaut le rayon ?")
+   rayon=float(rayon)
+   aire=pi*rayon**2
+   print("L'aire du cercle vaut :",round(aire,3))
+   print()
+   menu()
+
+def rectangle():
+   longueur=input("Que vaut la longueur ?")
+   longeur=float(longeur)
+   largeur=input("Que vaut la largeur ?")
+   largeur=float(largeur)
+   aire=longueur*largeur
+   print("L'aire du rectangle vaut :",round(aire,3))
+   print()
+   menu()
+
+def quit():
+   print("Aurevoir")
+   
+
+if __name__=="__main__":
+   menu()
